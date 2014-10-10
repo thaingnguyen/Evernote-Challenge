@@ -40,3 +40,4 @@ if __name__ == '__main__':
             print queue[idx]
         elif cmd == 'Q':
             break
+
