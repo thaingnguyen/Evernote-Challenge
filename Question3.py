@@ -9,13 +9,13 @@ import sys
 if __name__ == '__main__':
     n = int(sys.stdin.readline())
     a = []
-    sum = 1
+    product = 1
     zeros = 0
     for i in range(0,n):
         x = int(sys.stdin.readline())
         a.append(x)
         if x != 0:
-            sum *= a[len(a)-1]
+            product *= a[len(a)-1]
         else:
             zeros += 1
     
@@ -24,11 +24,11 @@ if __name__ == '__main__':
             print 0
         elif zeros == 1:
             if num == 0:
-                print sum
+                print product
             else:
                 print 0
         else:
-            print sum/num
+            print product/num
 
 
 
